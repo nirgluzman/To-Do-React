@@ -1,38 +1,51 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  border-bottom: 1px rgb(11, 113, 179) solid;
+}
+
+.navbar .logo {
+  width: 20%;
+  height: auto;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#logo-image {
+  width: 60%;
+  height: auto;
+}
+
+.navbar .title {
+  width: 100%;
+  text-transform: uppercase;
+  padding: 1% 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar .title h1 {
+  font-size: 2em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar .title p {
+  text-transform: capitalize;
+  font-family: "Indie Flower", cursive;
+  font-size: 1.5rem;
+  margin-bottom: 0;
 }
