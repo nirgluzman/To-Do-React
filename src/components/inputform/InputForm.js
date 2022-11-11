@@ -1,8 +1,4 @@
-import { useState, useEffect } from "react";
-
 export default function InputForm({ handleAddTodo }) {
-  console.log(handleAddTodo);
-
   return (
     <div className="input-form">
       <input

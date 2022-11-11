@@ -55,21 +55,32 @@ main {
   background-color: #455d7a;
 }
 
-.input-form {
+.task-input-container {
   display: flex;
-  width: 60%;
+  width: 70%;
   margin: 0 auto 1%;
   padding: 1.5% 0;
-  justify-content: space-evenly;
+  justify-content: center;
   background-color: #bfdce6;
   border: 1px rgb(11, 113, 179) solid;
   border-radius: 10px;
 }
 
-#new-task-input {
+.new-task-input {
   width: 70%;
   padding: 1%;
   font-size: 1.3em;
   border-radius: 5px;
   border: 1px #606470 solid;
+}
+
+.bi-plus-circle {
+  color: rgb(11, 113, 179);
+  margin-left: 2%;
+  flex-shrink: 0;
+  transition: transform.5s;
+}
+
+.bi-plus-circle:hover {
+  transform: rotate(360deg);
 }
