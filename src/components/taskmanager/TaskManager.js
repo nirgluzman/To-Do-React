@@ -65,9 +65,10 @@ export default function TaskManager() {
             placeholder="Add your new task here..."
             value={newTaskInput}
             onChange={handleChange}
+            className="text-input"
           />
           {toggleSubmit ? (
-            <button onClick={handleSubmit}>
+            <button onClick={handleSubmit} className="toggle">
               <svg
                 id="add-task"
                 xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +82,11 @@ export default function TaskManager() {
               </svg>
             </button>
           ) : (
-            <button title="Update-items" onClick={handleSubmit}>
+            <button
+              title="Update-items"
+              onClick={handleSubmit}
+              className="update"
+            >
               Update
             </button>
           )}
@@ -92,9 +97,11 @@ export default function TaskManager() {
           {tasks.map((taskValue) => {
             //console.log(tasks);
             return (
-              <li key={taskValue.id}>
-                <h1>{taskValue.task}</h1>
+              <li key={taskValue.id} className="list">
+                <h4>{taskValue.task}</h4>
+
                 <button onClick={() => editTask(taskValue.id)}>Edit</button>
+
                 <button onClick={() => handleDeleteClick(taskValue.id)}>
                   Delete
                 </button>

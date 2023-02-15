@@ -68,19 +68,46 @@ main {
 
 .new-task-input {
   width: 70%;
-  padding: 1%;
+  padding: 2%;
   font-size: 1.3em;
   border-radius: 5px;
   border: 1px #606470 solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-input,
+.toggle,
+.update {
+  padding: 1%;
+  margin: 0 2%;
+}
+.new-task-input button {
+  width: 20%;
 }
 
 .bi-plus-circle {
   color: rgb(11, 113, 179);
-  margin-left: 2%;
-  flex-shrink: 0;
   transition: transform.5s;
+  width: 10%;
 }
 
 .bi-plus-circle:hover {
   transform: rotate(360deg);
+}
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebeff1;
+  width: 60%;
+  margin: 0 auto 1%;
+
+  border-radius: 10px;
+}
+.list h4 {
+  padding: 5px;
+}
+.list button {
+  margin: 10px;
 }
